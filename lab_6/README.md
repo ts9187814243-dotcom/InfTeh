@@ -33,7 +33,7 @@ lab_6/
 ├── README.md
 ├── css/
     └── style.css
-```
+
 
 ## Адаптивность
 
