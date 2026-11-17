@@ -27,7 +27,6 @@
 
 ## Структура проекта
 
-```text
 lab_6/
 ├── index.html
 ├── README.md
