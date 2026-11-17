@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayEasy — Бронирование отелей</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard">
+
+    <!-- Шапка сайта -->
+    <header class="dashboard__header header">
+
+        <div class="header__logo">
+            StayEasy
+        </div>
+
+        <!-- Профиль пользователя -->
+        <div class="header__profile">
+            <span class="header__name">Иван И.</span>
+            <div class="header__avatar">И</div>
+        </div>
+
+    </header>
+
+    <!-- Боковое меню -->
+    <aside class="dashboard__sidebar sidebar">
+
+        <nav class="sidebar__nav">
+
+            <!-- Активный пункт меню -->
+            <a href="#" class="sidebar__link sidebar__link--active">
+                <span class="sidebar__icon">⌕</span>
+                <span class="sidebar__text">Поиск отелей</span>
+            </a>
+
+            <a href="#" class="sidebar__link">
+                <span class="sidebar__icon">▤</span>
+                <span class="sidebar__text">Мои бронирования</span>
+            </a>
+
+            <a href="#" class="sidebar__link">
+                <span class="sidebar__icon">♡</span>
+                <span class="sidebar__text">Избранное</span>
+            </a>
+
+            <a href="#" class="sidebar__link">
+                <span class="sidebar__icon">⚙</span>
+                <span class="sidebar__text">Настройки</span>
+            </a>
+
+        </nav>
+
+        <!-- Нижняя часть меню -->
+        <div class="sidebar__footer">
+            StayEasy © 2026
+        </div>
+
+    </aside>
+
+    <!-- Основная область страницы -->
+    <main class="dashboard__main main-content">
+
+        <!-- Приветственный блок -->
+        <section class="welcome">
+            <h1 class="welcome__title">
+                Найдите идеальный отель
+            </h1>
+
+            <p class="welcome__description">
+                Выберите направление и забронируйте отдых своей мечты.
+            </p>
+        </section>
+
+        <!-- Форма поиска отелей -->
+        <section class="search">
+
+            <h2 class="search__title">Поиск отелей</h2>
+
+            <!-- Flexbox используется для расположения полей формы -->
+            <form class="search__form">
+
+                <div class="search__field">
+                    <label class="search__label">
+                        Город или страна
+                        <input
+                            class="search__input"
+                            type="text"
+                            placeholder="Например, Париж"
+                        >
+                    </label>
+                </div>
+
+                <div class="search__field">
+                    <label class="search__label">
+                        Дата заезда
+                        <input
+                            class="search__input"
+                            type="text"
+                            placeholder="Например, 20.12.2026"
+                        >
+                    </label>
+                </div>
+
+                <div class="search__field">
+                    <label class="search__label">
+                        Дата выезда
+                        <input
+                            class="search__input"
+                            type="text"
+                            placeholder="Например, 25.12.2026"
+                        >
+                    </label>
+                </div>
+
+                <div class="search__field">
+                    <label class="search__label">
+                        Количество гостей
+                        <select class="search__input">
+                            <option>1 гость</option>
+                            <option selected>2 гостя</option>
+                            <option>3 гостя</option>
+                            <option>4 гостя</option>
+                        </select>
+                    </label>
+                </div>
+
+                <button class="search__button" type="submit">
+                    Найти отель
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Список доступных отелей -->
+        <section class="hotels">
+
+            <div class="hotels__header">
+                <div class="hotels__heading">
+                    <h2 class="hotels__title">
+                        Популярные отели
+                    </h2>
+
+                    <p class="hotels__description">
+                        Подборка лучших предложений для отдыха
+                    </p>
+                </div>
+
+                <a href="#" class="hotels__more">
+                    Все отели →
+                </a>
+            </div>
+
+            <!-- Grid используется для размещения карточек отелей -->
+            <div class="hotels__grid">
+
+                <!-- Карточка первого отеля -->
+                <article class="hotel-card">
+
+                    <img
+                        class="hotel-card__image"
+                        src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600"
+                        alt="Отель с бассейном"
+                    >
+
+                    <div class="hotel-card__content">
+
+                        <span class="hotel-card__rating">★ 4.9</span>
+
+                        <h3 class="hotel-card__title">
+                            Grand Palace Hotel
+                        </h3>
+
+                        <p class="hotel-card__location">
+                            Париж, Франция
+                        </p>
+
+                        <p class="hotel-card__description">
+                            Роскошный отель с бассейном и видом на город.
+                        </p>
+
+                        <div class="hotel-card__bottom">
+                            <p class="hotel-card__price">
+                                8 500 ₽
+                                <span class="hotel-card__period">/ ночь</span>
+                            </p>
+
+                            <button class="hotel-card__button">
+                                Забронировать
+                            </button>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Карточка второго отеля -->
+                <article class="hotel-card">
+
+                    <img
+                        class="hotel-card__image"
+                        src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600"
+                        alt="Отель на побережье"
+                    >
+
+                    <div class="hotel-card__content">
+
+                        <span class="hotel-card__rating">★ 4.8</span>
+
+                        <h3 class="hotel-card__title">
+                            Sea View Resort
+                        </h3>
+
+                        <p class="hotel-card__location">
+                            Барселона, Испания
+                        </p>
+
+                        <p class="hotel-card__description">
+                            Комфортабельные номера рядом с морским побережьем.
+                        </p>
+
+                        <div class="hotel-card__bottom">
+                            <p class="hotel-card__price">
+                                6 200 ₽
+                                <span class="hotel-card__period">/ ночь</span>
+                            </p>
+
+                            <button class="hotel-card__button">
+                                Забронировать
+                            </button>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Карточка третьего отеля -->
+                <article class="hotel-card">
+
+                    <img
+                        class="hotel-card__image"
+                        src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600"
+                        alt="Гостиничный комплекс"
+                    >
+
+                    <div class="hotel-card__content">
+
+                        <span class="hotel-card__rating">★ 4.7</span>
+
+                        <h3 class="hotel-card__title">
+                            Mountain Paradise
+                        </h3>
+
+                        <p class="hotel-card__location">
+                            Цюрих, Швейцария
+                        </p>
+
+                        <p class="hotel-card__description">
+                            Уютный отдых среди гор с красивыми пейзажами.
+                        </p>
+
+                        <div class="hotel-card__bottom">
+                            <p class="hotel-card__price">
+                                9 300 ₽
+                                <span class="hotel-card__period">/ ночь</span>
+                            </p>
+
+                            <button class="hotel-card__button">
+                                Забронировать
+                            </button>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="dashboard__footer footer">
+        <p class="footer__text">
+            © 2026 StayEasy. Все права защищены.
+        </p>
+    </footer>
+
+</body>
+</html>
